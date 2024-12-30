@@ -18,12 +18,6 @@ return Application::configure(basePath: dirname(__DIR__))
             SetLocale::class,
             SetTimeZone::class,
         ]);
-        /*$middleware->api(prepend: [
-            SetLocale::class,
-            SetTimeZone::class,
-        ]);*/
-        //$middleware->append(SetLocale::class);
-        //$middleware->append(SetTimeZone::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
