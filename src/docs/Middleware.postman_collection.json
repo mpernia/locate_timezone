@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "85b2a61c-a25c-45a6-8296-d859a83acbbd",
+		"name": "TestMiddleware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37022392"
+	},
+	"item": [
+		{
+			"name": "health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/health-check",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locale",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "es-ES,es;q=0.9"
+					},
+					{
+						"key": "X-Language",
+						"value": "es",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/locale",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timezone",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Timezone",
+						"value": "Europe/Madrid",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/timezone",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"timezone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
