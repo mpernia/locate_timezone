@@ -14,13 +14,13 @@ Composer
 1- Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/laravel-middleware-language-timezone.git
+git clone https://github.com/mpernia/locate_timezone.git
 ```
 
 2- Navigate into the project folder:
 
 ```bash
-cd laravel-middleware-language-timezone
+cd locate_timezone
 ```
 
 3- Install the dependencies using Composer:
